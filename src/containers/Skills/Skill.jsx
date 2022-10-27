@@ -1,8 +1,8 @@
 import React from "react"
 
-import './Skill/scss';
+import './Skill.scss';
 
-const Skill = () =>{
+const Skill = () => {
     return(
         <h1>Skills set</h1>
     )
