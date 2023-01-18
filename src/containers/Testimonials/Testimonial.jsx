@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import './Testimonial.scss';
 import { brands, testimonials } from "../../constants";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 
 const Testimonial = () => {
@@ -57,4 +57,8 @@ const Testimonial = () => {
         </>
     )
 }
-export default AppWrap (Testimonial, 'testimonial')
+export default AppWrap (
+    MotionWrap(Testimonial, 'app__testimonial'),
+    'testimonial',
+    'app__primarybg',
+);

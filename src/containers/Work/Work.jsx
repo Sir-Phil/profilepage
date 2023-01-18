@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 import './Work.scss'
 import {filterWork} from "../../constants";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 const Work = () => {
     const [works, setWorks] = useState([]);
@@ -95,4 +95,8 @@ const Work = () => {
     )
 }
 
-export default AppWrap(Work, 'works');
+export default AppWrap(
+    MotionWrap (Work, 'app__works'),
+    'works',
+    'app__primarybg'
+    );
